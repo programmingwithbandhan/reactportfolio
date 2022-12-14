@@ -1,0 +1,83 @@
+@import "variables";
+// fffddd
+.container{
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, minmax(200px, 500px));
+    text-align: left;
+
+
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+
+        .btn-link{
+        //    margin-right: 60%;
+        }
+        
+        .header-title{
+            font-size: 4rem;
+            color: $content-green;
+            .userName{
+                color: $main-pink;
+
+            }
+        }
+        // 60c689
+
+        .header-desc{
+
+            // padding: 0 0 .5rem 0;
+            font-size: 18px;
+            color: $content-green;
+
+            .psn{
+                color: $main-pink;
+                font-weight: 700;
+            }
+
+
+            .desc-country{
+                color: $content-blue;
+                font-size: 3rem;
+                font-weight: bold;
+
+                
+            }
+        }
+    }
+
+    .image-container{
+        .hero-image{
+            width: 400px;
+        }
+    }
+}
+@media (max-width: $laptop){
+    .container{
+        grid-template-columns: repeat(1, minmax(200px, 500px));
+        text-align: center;
+        align-items: center;
+
+            .hero-image{
+                width: 150px;
+            }
+            .header-title{
+                font-size: 1rem;
+            }
+            .header-desc{
+                font-size: 14px;
+
+                .desc-country{
+                    font-size: 1.5rem;
+                }
+            }
+    }
+}

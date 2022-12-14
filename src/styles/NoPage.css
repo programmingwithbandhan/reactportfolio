@@ -1,0 +1,17 @@
+.div--404 {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.div--404 #error-img {
+  width: 30rem;
+}
+.div--404 h1 {
+  margin: 2rem 0;
+}
+.div--404 h1 .errormsg {
+  color: #ff9494;
+}/*# sourceMappingURL=NoPage.css.map */

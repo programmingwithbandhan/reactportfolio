@@ -1,0 +1,60 @@
+@import "variables";
+
+.about-container {
+    height: 90vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(2, minmax(300px, 500px));
+
+
+    .info {
+        .about-header {
+            font-size: 3rem;
+            pointer-events: $none;
+        }
+
+        .mid-info {
+            padding: 0 0 2rem 0;
+            color: $content-green;
+            pointer-events: $none;
+        }
+
+        .justify-text {
+            text-align: justify;
+            pointer-events: $none;
+        }
+    }
+
+    .image-grp {
+        .about-image {
+            width: 400px;
+            background: $linear-teal;
+            border-radius: 30px;
+        }
+    }
+
+    .icon-grp{
+        width: 500px;
+        height: 100px;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+
+      
+
+        .icon{
+            margin: 0 .565rem;
+            font-size: 1.45rem;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width:740px) {
+    .about-container {
+        text-align: center;
+        grid-template-columns: repeat(1, minmax(200px, 500px));
+    }
+}

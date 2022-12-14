@@ -1,0 +1,58 @@
+.container {
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(2, minmax(200px, 500px));
+  text-align: left;
+}
+.container .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .header .header-title {
+  font-size: 4rem;
+  color: #60c689;
+}
+.container .header .header-title .userName {
+  color: #c21856;
+}
+.container .header .header-desc {
+  font-size: 18px;
+  color: #60c689;
+}
+.container .header .header-desc .psn {
+  color: #c21856;
+  font-weight: 700;
+}
+.container .header .header-desc .desc-country {
+  color: #276880;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.container .image-container .hero-image {
+  width: 400px;
+}
+
+@media (max-width: 769px) {
+  .container {
+    grid-template-columns: repeat(1, minmax(200px, 500px));
+    text-align: center;
+    align-items: center;
+  }
+  .container .hero-image {
+    width: 150px;
+  }
+  .container .header-title {
+    font-size: 1rem;
+  }
+  .container .header-desc {
+    font-size: 14px;
+  }
+  .container .header-desc .desc-country {
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=Home.css.map */

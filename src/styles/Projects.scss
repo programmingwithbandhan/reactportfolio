@@ -1,0 +1,11 @@
+@import "variables";
+
+.center-div{
+    @include dflex;
+    height: 90vh;
+    width: 100%;
+
+    .ofc{
+        color: $main-pink;
+    }
+}

@@ -1,0 +1,41 @@
+// theme colors
+
+$bg-dark-primary: #18191a;
+$main-pink: #c21856;
+$white: #ffffff;
+$dim-white: #eeeeee;
+$content-green: #60c689;
+$content-blue: #276880;
+$linear-teal: linear-gradient(to bottom, rgb(20 184 166), rgb(240 253 250));
+$error: #ff9494;
+
+
+
+// social media icon colors
+$twitter-blue: #1DA1F2;
+$insta-gradient: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+$facebook-blue: rgb(66 103 178);
+$github-black: #171515;
+
+
+// layout properties
+$none: none;
+$mobile: 320px; // max: 480
+$tablet: 481px; // max: 768
+$laptop: 769px; // max 1024
+$desktop: 1025px;
+
+//mixins
+
+@mixin dflex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin spaceFlex{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+

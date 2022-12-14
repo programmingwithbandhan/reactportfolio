@@ -1,0 +1,45 @@
+.about-container {
+  height: 90vh;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: space-evenly;
+  grid-template-columns: repeat(2, minmax(300px, 500px));
+}
+.about-container .info .about-header {
+  font-size: 3rem;
+  pointer-events: none;
+}
+.about-container .info .mid-info {
+  padding: 0 0 2rem 0;
+  color: #60c689;
+  pointer-events: none;
+}
+.about-container .info .justify-text {
+  text-align: justify;
+  pointer-events: none;
+}
+.about-container .image-grp .about-image {
+  width: 400px;
+  background: linear-gradient(to bottom, rgb(20, 184, 166), rgb(240, 253, 250));
+  border-radius: 30px;
+}
+.about-container .icon-grp {
+  width: 500px;
+  height: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+.about-container .icon-grp .icon {
+  margin: 0 0.565rem;
+  font-size: 1.45rem;
+  color: #fff;
+}
+
+@media (max-width: 740px) {
+  .about-container {
+    text-align: center;
+    grid-template-columns: repeat(1, minmax(200px, 500px));
+  }
+}/*# sourceMappingURL=About.css.map */
